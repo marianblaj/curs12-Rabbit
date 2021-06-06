@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="course-service" />
+        <module name="student-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="communication-model" target="8" />
+      <module name="exchange-communication" target="8" />
+      <module name="exchange-publisher" target="11" />
+      <module name="exchange-subscriber" target="11" />
+      <module name="simple-queve-communication" target="8" />
+      <module name="simple-queve-consumer" target="11" />
+      <module name="simple-queve-producer" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="course-service" options="-parameters" />
+      <module name="exchange-publisher" options="-parameters" />
+      <module name="exchange-subscriber" options="-parameters" />
+      <module name="simple-queve-consumer" options="-parameters" />
+      <module name="simple-queve-producer" options="-parameters" />
+      <module name="student-service" options="-parameters" />
+    </option>
+  </component>
+</project>
